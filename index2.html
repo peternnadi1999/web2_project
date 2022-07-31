@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(image/pattern-background-desktop.svg);
+            /* background-color: hsl(224, 23%, 55%); */
+            transform: translateY(-180deg);
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .wrapper{
+            background-color: #fff;
+            width: 30%;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 1px 2px 4px rgba(22, 25, 25, 0.25);
+        }
+        .wrapper .image img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .content h1{
+            font-size: 22px;
+            color: rgb(3, 3, 3);
+            font-weight: 900;
+        }
+        .content p{
+            width: 80%;
+            font-size:14px;
+            margin:auto;
+            padding:10px;
+            color:hsl(225, 2%, 36%) ;
+        }
+        .music-cost{
+            display: flex;
+            width: 80%;
+            text-align: center;
+            border-radius: 6px;
+            margin: auto;
+            background-color: hsl(225, 100%, 94%, 0.25);
+        }
+        .content .btn{
+            background-color: hsl(245, 75%, 52%);
+            width: 80%;
+            box-shadow: 1px 4px 17px rgba(22, 25, 25, 0.25);
+            margin-top: 20px;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            font-weight: 700;
+            padding: 10px;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .content .btn1{
+            background-color: transparent;
+            width: 80%;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: 700;
+            margin-bottom: 50px;
+            outline: none;
+            border: none;
+            color: hsl(224, 23%, 55%);
+        }
+        @media screen and (max-width: 812px) {
+            .wrapper{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="image">
+            <img src="image/illustration-hero.svg" alt="">
+        </div>
+        <div class="content">
+            <h1>Order Summary</h1>
+            <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            <div class="music-cost">
+                <img src="image/icon-music.svg" width="45" height="45" style="margin:20px;" alt="">
+                <div style="margin-top:-10px; margin-left: -20px; margin-right:20px">
+                    <h6 style="font-size: 14px">Annual Plan</h6>
+                    <p style="margin-top: -40px;">$59.99/year</p>
+                </div>
+                <a href="#" style="color: blue; text-align: right; font-weight: 600; margin: auto; font-size: 14px;">Change</a>
+            </div>
+            <button class="btn">Proceed to Payment</button>
+            <button class="btn1">Cancel Order</button>
+        </div>
+    </div>
+</body>
+</html>
